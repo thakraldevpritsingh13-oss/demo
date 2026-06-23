@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mala Tree | Handcrafted Rudraksha & Spiritual Bead Jewelry</title>
+    <meta name="description" content="Handcrafted Rudraksha malas, crystal malas, bracelets and sacred bead combinations. Spiritual jewelry designed to bring peace, positivity and balance.">
+    <meta name="keywords" content="Rudraksha, Mala, Spiritual Beads, Crystal Jewelry, Healing Accessories, Patiala, Punjab">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mala Tree | Handcrafted Rudraksha & Spiritual Bead Jewelry">
+    <meta property="og:description" content="Handcrafted Rudraksha malas, crystal malas, bracelets and sacred bead combinations. Spiritual jewelry designed to bring peace, positivity and balance.">
+    <meta property="og:image" content="https://japam.in/cdn/shop/files/FINAL_1.jpg?v=1768491234&width=1214">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Mala Tree",
+      "image": "https://japam.in/cdn/shop/files/FINAL_1.jpg?v=1768491234&width=1214",
+      "description": "Handcrafted Rudraksha malas, crystal malas, bracelets and sacred bead combinations.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Patiala",
+        "addressRegion": "Punjab",
+        "addressCountry": "IN"
+      },
+      "url": "https://wa.me/917681915216",
+      "telephone": "+917681915216",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* ==========================================================================
+           COLOR SYSTEM & VARIABLES
+           ========================================================================== */
+        :root {
+            --primary: #8B5E3C;
+            --cream: #F8F4EE;
+            --saffron: #D4860B;
+            --green: #3B5323;
+            --white: #FFFFFF;
+            --dark: #2B2118;
+            --text: #4A3A2F;
+            --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        /* ==========================================================================
+           RESET & BASE STYLES
+           ========================================================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--text);
+            background-color: var(--cream);
+            line-height: 1.7;
+            overflow-x: hidden;
+            /* Soft natural CSS pattern background overlay */
+            background-image: radial-gradient(var(--primary) 0.5px, transparent 0.5px), radial-gradient(var(--primary) 0.5px, var(--cream) 0.5px);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+            opacity: 0.99;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--dark);
+            font-weight: 600;
+            letter-spacing: 0.03em;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        button, input, textarea {
+            font-family: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Utility Components */
+        .section-padding {
+            padding: 100px 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Lotus Separator Component */
+        .lotus-separator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 24px 0;
+            position: relative;
+        }
+        .lotus-separator::before, .lotus-separator::after {
+            content: '';
+            height: 1px;
+            width: 80px;
+            background: linear-gradient(to right, transparent, var(--primary));
+        }
+        .lotus-separator::after {
+            background: linear-gradient(to left, transparent, var(--primary));
+        }
+        .lotus-separator span {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin: 0 16px;
+            line-height: 1;
+        }
+
+        /* Section Header Layout */
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: var(--dark);
+        }
+
+        /* Fade Up Animation Styles */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .fade-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Focus States for Accessibility */
+        *:focus-visible {
+            outline: 3px solid var(--saffron);
+            outline-offset: 3px;
+        }
+
+        /* Button Ripple Setup */
+        .btn {
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(139, 94, 60, 0.3);
+        }
+        .btn-primary:hover {
+            background-color: var(--dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(43, 33, 24, 0.4);
+        }
+        .btn-secondary {
+            background-color: var(--green);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(59, 83, 35, 0.3);
+        }
+        .btn-secondary:hover {
+            background-color: var(--dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(43, 33, 24, 0.4);
+        }
+
+        /* Ripple Wave Element */
+        .ripple {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            transform: scale(0);
+            animation: ripple-effect 0.6s linear;
+            pointer-events: none;
+        }
+        @keyframes ripple-effect {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* ==========================================================================
+           NAVIGATION HEADER
+           ========================================================================== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 24px;
+            transition: var(--transition);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar.scrolled {
+            background-color: rgba(43, 33, 24, 0.95);
+            padding: 14px 24px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+        .navbar.scrolled .nav-links a {
+            color: var(--cream);
+        }
+        .navbar.scrolled .nav-links a:hover {
+            color: var(--saffron);
+        }
+        .navbar.scrolled .logo {
+            color: var(--white);
+        }
+        .navbar.scrolled .hamburger span {
+            background-color: var(--white);
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo span {
+            color: var(--saffron);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            padding: 4px 0;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--saffron);
+            transition: var(--transition);
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile Hamburger styles */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            z-index: 1010;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            background-color: var(--white);
+            transition: var(--transition);
+        }
+        .hamburger.open span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        .hamburger.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ==========================================================================
+           HERO SECTION
+           ========================================================================== */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            color: var(--white);
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            background: linear-gradient(rgba(43, 33, 24, 0.55), rgba(43, 33, 24, 0.6)), url('https://japam.in/cdn/shop/files/FINAL_1.jpg?v=1768491234&width=1214') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+            transform: translateY(0);
+            will-change: transform;
+        }
+        .hero-content {
+            max-width: 800px;
+            padding: 0 24px;
+            z-index: 2;
+        }
+        .hero-label {
+            font-size: 1.1rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--saffron);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        .hero h1 {
+            font-size: 4.5rem;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+        .hero-text {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            color: rgba(248, 244, 238, 0.9);
+        }
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+        }
+        .om-floating {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5rem;
+            color: rgba(212, 134, 11, 0.6);
+            animation: float-om 4s ease-in-out infinite;
+        }
+        @keyframes float-om {
+            0%, 100% { transform: translate(-50%, 0); }
+            50% { transform: translate(-50%, -15px); }
+        }
+
+        /* ==========================================================================
+           ABOUT SECTION
+           ========================================================================== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(43, 33, 24, 0.15);
+        }
+        .about-image img {
+            width: 100%;
+            height: 540px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .about-image:hover img {
+            transform: scale(1.03);
+        }
+        .about-content h2 {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+        .about-content p {
+            margin-bottom: 20px;
+            color: var(--text);
+            font-size: 1.1rem;
+        }
+
+        /* ==========================================================================
+           STATS SECTION
+           ========================================================================== */
+        .stats-section {
+            background-color: var(--dark);
+            color: var(--cream);
+            padding: 80px 24px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            text-align: center;
+        }
+        .stat-item h3 {
+            font-size: 3.5rem;
+            color: var(--saffron);
+            margin-bottom: 8px;
+        }
+        .stat-item p {
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: rgba(248, 244, 238, 0.8);
+        }
+
+        /* ==========================================================================
+           PRODUCTS SECTION
+           ========================================================================== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        .product-card {
+            background-color: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(43, 33, 24, 0.05);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(139, 94, 60, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(43, 33, 24, 0.12);
+        }
+        .product-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1/1;
+        }
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .product-card:hover img {
+            transform: scale(1.08);
+        }
+        .product-info {
+            padding: 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-title {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+        .product-desc {
+            font-size: 0.95rem;
+            color: var(--text);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        /* ==========================================================================
+           GALLERY SECTION
+           ========================================================================== */
+        .gallery-grid {
+            columns: 4 250px;
+            column-gap: 20px;
+        }
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(43, 33, 24, 0.06);
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            transition: var(--transition);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(43,33,24,0.85), transparent);
+            opacity: 0;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-overlay span {
+            color: var(--white);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+        }
+
+        /* Lightbox Design */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(23, 17, 12, 0.95);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition);
+            padding: 24px;
+        }
+        .lightbox.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .lightbox-content {
+            max-width: 900px;
+            max-height: 80vh;
+            position: relative;
+        }
+        .lightbox-content img {
+            border-radius: 8px;
+            max-height: 80vh;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            color: var(--white);
+            font-size: 2rem;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+        }
+
+        /* ==========================================================================
+           TESTIMONIAL SECTION
+           ========================================================================== */
+        .testimonial-section {
+            background-color: rgba(139, 94, 60, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        .slider-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            height: 220px;
+        }
+        .testimonial-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .testimonial-slide.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .testimonial-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-style: italic;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        .testimonial-user {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+        }
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(139, 94, 60, 0.3);
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+        .dot.active {
+            background-color: var(--primary);
+            transform: scale(1.3);
+        }
+
+        /* ==========================================================================
+           CONTACT SECTION
+           ========================================================================== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+        }
+        /* Glassmorphism elements styling */
+        .contact-info-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 15px 35px rgba(43, 33, 24, 0.04);
+        }
+        .contact-info-card h3 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 28px;
+        }
+        .contact-method-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 4px;
+        }
+        .contact-method-text h4 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+        .contact-method-text p, .contact-method-text a {
+            font-size: 1.1rem;
+            color: var(--text);
+        }
+        .contact-method-text a:hover {
+            color: var(--saffron);
+        }
+
+        .contact-form-container {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(43, 33, 24, 0.06);
+            border: 1px solid rgba(139, 94, 60, 0.08);
+        }
+        .form-group {
+            margin-bottom: 24px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(139, 94, 60, 0.2);
+            background-color: var(--cream);
+            color: var(--dark);
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            background-color: var(--white);
+            box-shadow: 0 0 0 4px rgba(139, 94, 60, 0.1);
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        /* ==========================================================================
+           FLOATING WHATSAPP & BACK TO TOP BUTTONS
+           ========================================================================== */
+        .fixed-actions {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            z-index: 999;
+        }
+        .whatsapp-float {
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            animation: pulse-whatsapp 2s infinite;
+        }
+        @keyframes pulse-whatsapp {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .back-to-top {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(139, 94, 60, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .back-to-top:hover {
+            background-color: var(--dark);
+        }
+
+        /* ==========================================================================
+           FOOTER STYLES
+           ========================================================================== */
+        .footer {
+            background-color: var(--dark);
+            color: rgba(248, 244, 238, 0.8);
+            padding: 80px 24px 40px;
+            text-align: center;
+        }
+        .footer-om {
+            font-size: 3rem;
+            color: var(--saffron);
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+        .footer h2 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+        .footer-tagline {
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: var(--cream);
+            margin-bottom: 40px;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .footer-nav a {
+            color: rgba(248, 244, 238, 0.7);
+            font-weight: 600;
+        }
+        .footer-nav a:hover {
+            color: var(--saffron);
+        }
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .footer-social-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: rgba(248, 244, 238, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cream);
+            transition: var(--transition);
+        }
+        .footer-social-link:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+        .footer-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(248, 244, 238, 0.15), transparent);
+            margin-bottom: 30px;
+        }
+        .footer-copy {
+            font-size: 0.9rem;
+            color: rgba(248, 244, 238, 0.5);
+        }
+
+        /* ==========================================================================
+           RESPONSIVE BREAKPOINTS (Mobile-First)
+           ========================================================================== */
+        @media (max-width: 1024px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 20px;
+            }
+            .navbar {
+                padding: 20px;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 400px;
+                height: 100vh;
+                background-color: var(--dark);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                transition: 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+                box-shadow: -10px 0 30px rgba(0,0,0,0.3);
+            }
+            .nav-links.open {
+                right: 0;
+            }
+            .nav-links a {
+                font-size: 1.25rem;
+                color: var(--cream);
+            }
+            .about-grid, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .about-image img {
+                height: 380px;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            .hero-text {
+                font-size: 1.1rem;
+            }
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+            .about-content h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            .hero-actions {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .btn {
+                width: 100%;
+            }
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-info-card, .contact-form-container {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== */ -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="#" class="logo" aria-label="Mala Tree Home">ॐ Mala Tree</a>
+        <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== */ -->
+    <header class="hero">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-content fade-up">
+            <p class="hero-label">Handcrafted Spiritual Jewelry</p>
+            <h1>Wear the Energy of the Universe</h1>
+            <p class="hero-text">Handcrafted Rudraksha malas and sacred bead creations inspired by nature, mindfulness and timeless traditions.</p>
+            <div class="hero-actions">
+                <a href="#collection" class="btn btn-primary">Explore Collection</a>
+                <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-secondary">
+                    <svg style="width:20px; height:20px; margin-right:8px; fill:currentColor;" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.405.003 12.003.003c3.199.001 6.205 1.244 8.463 3.504 2.259 2.26 3.5 5.268 3.498 8.468-.003 6.654-5.347 11.997-11.944 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.66.986 3.292 1.48 4.96 1.481 5.437 0 9.859-4.42 9.863-9.854.002-2.633-1.023-5.11-2.887-6.974A9.799 9.799 0 0 0 12.003 1.1c-5.44 0-9.863 4.422-9.865 9.857-.001 1.768.473 3.401 1.373 4.904l-.994 3.633 3.731-.979zm11.171-4.706c-.302-.151-1.785-.881-2.062-.982-.277-.1-.478-.151-.68.151-.201.302-.781.982-.957 1.182-.176.2-.352.226-.654.076-.301-.151-1.274-.47-2.426-1.498-.897-.8-1.502-1.789-1.678-2.09-.176-.302-.019-.465.131-.615.136-.135.302-.352.453-.529.151-.176.201-.302.302-.503.101-.2.05-.377-.025-.529-.075-.151-.68-1.634-.932-2.244-.246-.591-.496-.51-.68-.519-.176-.009-.377-.01-.578-.011-.201 0-.528.075-.805.377-.277.301-1.057 1.032-1.057 2.516s1.082 2.917 1.233 3.118c.151.201 2.13 3.253 5.16 4.561.72.311 1.282.497 1.72.637.724.23 1.382.198 1.902.12.58-.088 1.785-.73 2.037-1.435.252-.704.252-1.308.176-1.435-.076-.127-.277-.202-.579-.353z"/></svg>
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+        <div class="om-floating">ॐ</div>
+    </header>
+
+    <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== */ -->
+    <section id="about" class="section-padding container">
+        <div class="about-grid">
+            <div class="about-image fade-up">
+                <img src="https://images.unsplash.com/photo-1596548438137-d51ef5c83391?auto=format&fit=crop&w=800&q=80" alt="Mala Tree Artisan Hand Splicing Beautiful Beads">
+            </div>
+            <div class="about-content fade-up">
+                <h2>Rooted in Nature, Crafted for the Soul</h2>
+                <div class="lotus-separator" style="justify-content: flex-start; margin: 16px 0;"><span>ॐ</span></div>
+                <p>At Mala Tree, we believe that jewelry should be more than mere ornamentation. Our thoughtfully handcrafted items serve as anchor points for mindfulness, carriers of energetic intentions, and beautiful extensions of your soul’s path.</p>
+                <p>Every single sacred bead and authentic Rudraksha is sourced responsibly with profound respect for age-old Eastern traditions. Hand-knotted precisely in Patiala, Punjab, our creations call forth balance, grounding, and inner peace into your modern dynamic lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       STATS SECTION
+       ========================================================================== */ -->
+    <section class="stats-section" aria-label="Business Milestones">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h3 class="counter" data-target="500">0</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Mala Types</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="100">0</h3>
+                <p>Natural Beads %</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Years of Craftsmanship</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       PRODUCTS SECTION
+       ========================================================================== */ -->
+    <section id="collection" class="section-padding container">
+        <div class="section-header fade-up">
+            <h2>Sacred Collections</h2>
+            <div class="lotus-separator"><span>ॐ</span></div>
+            <p>Explore our premium range of spiritual tools intentionally curated for meditation, healing, and lifestyle alignment.</p>
+        </div>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card fade-up">
+                <div class="product-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" alt="Custom Rudraksha Mala">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Custom Rudraksha Mala</h3>
+                    <p class="product-desc">Tailored specific combinations thoughtfully designed around your astrological alignment and intent.</p>
+                    <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Inquire via WhatsApp</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card fade-up">
+                <div class="product-img-wrapper">
+                    <img src="https://i.etsystatic.com/19445186/r/il/1dbb01/4155602830/il_570xN.4155602830_qtbc.jpg" alt="Bracelet Malas Wrist Wear">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Bracelet Malas</h3>
+                    <p class="product-desc">Convenient, elegant wrist malas providing grounding energies throughout your active daily routine.</p>
+                    <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Inquire via WhatsApp</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card fade-up">
+                <div class="product-img-wrapper">
+                    <img src="https://omrudrakshakendra.com/cdn/shop/files/WhatsAppImage2023-09-02at1.15.34PM.jpg?v=1693647216&width=1946" alt="Single Rudraksha Beads Close Up">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Single Rudraksha Beads</h3>
+                    <p class="product-desc">Authentic, high-mukhi premium single seeds selected carefully for customized wearing.</p>
+                    <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Inquire via WhatsApp</a>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card fade-up">
+                <div class="product-img-wrapper">
+                    <img src="https://www.rudrablessings.com/cdn/shop/products/image-1-1_1500x.jpg?v=1594935304" alt="Indonesian Rudraksha Malas">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Indonesian Rudraksha</h3>
+                    <p class="product-desc">Smooth, small-sized lightweight premium beads perfect for everyday spiritual wear comfort.</p>
+                    <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Inquire via WhatsApp</a>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card fade-up">
+                <div class="product-img-wrapper">
+                    <img src="https://i.etsystatic.com/11544714/r/il/6b6440/1668818670/il_570xN.1668818670_1kh2.jpg" alt="Nepali Genuine Large Rudraksha">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Nepali Rudraksha</h3>
+                    <p class="product-desc">Large, deeply grooved powerful structural beads possessing classic energetic vibrations.</p>
+                    <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Inquire via WhatsApp</a>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card fade-up">
+                <div class="product-img-wrapper">
+                    <img src="http://www.trucrystals.in/cdn/shop/products/August2022_1.png?v=1760187372" alt="Crystal Malas Crystals and Gems">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Crystal Malas</h3>
+                    <p class="product-desc">Hand-selected semi-precious genuine gemstones chosen to elevate specific energetic properties.</p>
+                    <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Inquire via WhatsApp</a>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card fade-up">
+                <div class="product-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80" alt="Meditation Beads Japa Prayer Malas">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Meditation Beads</h3>
+                    <p class="product-desc">Traditional 108-bead structures built to reliably ground deep japa and mindfulness practices.</p>
+                    <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Inquire via WhatsApp</a>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card fade-up">
+                <div class="product-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1611085583191-a3b1a3a355db?auto=format&fit=crop&w=600&q=80" alt="Custom Sacred Combinations of Gems">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Custom Sacred Combinations</h3>
+                    <p class="product-desc">Harmonious balanced designs systematically integrating Rudraksha with healing crystals.</p>
+                    <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Inquire via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       GALLERY SECTION
+       ========================================================================== */ -->
+    <section id="gallery" class="section-padding container">
+        <div class="section-header fade-up">
+            <h2>The Craft Gallery</h2>
+            <div class="lotus-separator"><span>ॐ</span></div>
+            <p>A visual glimpse into our natural creations, detailed stringing processes, and artistic creations.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item fade-up">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Spiritual Mala Bead Detail">
+                <div class="gallery-overlay"><span>Sacred Tassel Mala</span></div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="https://omrudrakshakendra.com/cdn/shop/files/WhatsAppImage2023-09-02at1.15.34PM.jpg?v=1693647216&width=1946" alt="Authentic Rudraksha Close Up">
+                <div class="gallery-overlay"><span>Nepali 5-Mukhi Bead</span></div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="http://www.trucrystals.in/cdn/shop/products/August2022_1.png?v=1760187372" alt="Healing Crystal Beads Combination">
+                <div class="gallery-overlay"><span>Premium Quartz & Crystal Links</span></div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=600&q=80" alt="Artisan Handknotting Process">
+                <div class="gallery-overlay"><span>The Art of Knotting</span></div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="https://i.etsystatic.com/19445186/r/il/1dbb01/4155602830/il_570xN.4155602830_qtbc.jpg" alt="Elegant Wrist Mala Bracelet">
+                <div class="gallery-overlay"><span>Everyday Protection Bracelets</span></div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=600&q=80" alt="Meditation Space with Mala Tree items">
+                <div class="gallery-overlay"><span>Altar Spiritual Settings</span></div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="https://www.rudrablessings.com/cdn/shop/products/image-1-1_1500x.jpg?v=1594935304" alt="Sourced Premium Raw Beads">
+                <div class="gallery-overlay"><span>Raw Authentic Materials</span></div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="https://i.etsystatic.com/11544714/r/il/6b6440/1668818670/il_570xN.1668818670_1kh2.jpg" alt="Custom Sacred Bead Combinations">
+                <div class="gallery-overlay"><span>Siddha Combination Layouts</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal Box -->
+    <div class="lightbox" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Viewer">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Viewer">&times;</button>
+        <div class="lightbox-content">
+            <img src="" id="lightboxImg" alt="">
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       TESTIMONIAL SECTION
+       ========================================================================== */ -->
+    <section id="testimonials" class="section-padding testimonial-section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Shared Experiences</h2>
+                <div class="lotus-separator"><span>ॐ</span></div>
+            </div>
+            <div class="slider-container fade-up">
+                <div class="testimonial-slide active">
+                    <p class="testimonial-text">"The mala feels deeply personal and beautifully crafted."</p>
+                    <p class="testimonial-user">— Aarav M., Delhi</p>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"Every bead carries a calming energy."</p>
+                    <p class="testimonial-user">— Priyan K., Mumbai</p>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"Exceptional quality and genuine craftsmanship."</p>
+                    <p class="testimonial-user">— Sunita R., Patiala</p>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"A meaningful gift that instantly felt special."</p>
+                    <p class="testimonial-user">— Devendra S., Bangalore</p>
+                </div>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== */ -->
+    <section id="contact" class="section-padding container">
+        <div class="section-header fade-up">
+            <h2>Connect With Us</h2>
+            <div class="lotus-separator"><span>ॐ</span></div>
+            <p>Begin designing your highly personalized spiritual companion or make detailed general product sourcing inquiries.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info-card fade-up">
+                <h3>Our Sanctuary</h3>
+                <div class="contact-method">
+                    <div class="contact-method-icon">📍</div>
+                    <div class="contact-method-text">
+                        <h4>Location</h4>
+                        <p>Patiala, Punjab, India</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-method-icon">📞</div>
+                    <div class="contact-method-text">
+                        <h4>Phone</h4>
+                        <p><a href="tel:7681915216">7681915216</a></p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-method-icon">📸</div>
+                    <div class="contact-method-text">
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/custom_mala_knots?igsh=bHc0d2FqcW9wbWV6" target="_blank" rel="noopener">@custom_mala_knots</a></p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-method-icon">💬</div>
+                    <div class="contact-method-text">
+                        <h4>WhatsApp Channel</h4>
+                        <p><a href="https://wa.me/917681915216" target="_blank" rel="noopener">Chat Securely Direct</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container fade-up">
+                <form id="malaContactForm" onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will connect with you shortly.'); this.reset();">
+                    <div class="form-group">
+                        <label Belongs to="formName">Your Full Name</label>
+                        <input type="text" id="formName" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label Belongs to="formPhone">Phone Number</label>
+                        <input type="tel" id="formPhone" class="form-control" placeholder="Enter your contact number" required>
+                    </div>
+                    <div class="form-group">
+                        <label Belongs to="formMsg">Your Message / Intentions</label>
+                        <textarea id="formMsg" class="form-control" placeholder="Describe the type of combination or mala you wish to seek..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Bottom Action Elements -->
+    <div class="fixed-actions">
+        <button class="back-to-top" id="scrollTopBtn" aria-label="Scroll Back To Top">↑</button>
+        <a href="https://wa.me/917681915216" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Connect on WhatsApp">
+            <svg style="width:30px; height:30px; fill:currentColor;" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.405.003 12.003.003c3.199.001 6.205 1.244 8.463 3.504 2.259 2.26 3.5 5.268 3.498 8.468-.003 6.654-5.347 11.997-11.944 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.66.986 3.292 1.48 4.96 1.481 5.437 0 9.859-4.42 9.863-9.854.002-2.633-1.023-5.11-2.887-6.974A9.799 9.799 0 0 0 12.003 1.1c-5.44 0-9.863 4.422-9.865 9.857-.001 1.768.473 3.401 1.373 4.904l-.994 3.633 3.731-.979zm11.171-4.706c-.302-.151-1.785-.881-2.062-.982-.277-.1-.478-.151-.68.151-.201.302-.781.982-.957 1.182-.176.2-.352.226-.654.076-.301-.151-1.274-.47-2.426-1.498-.897-.8-1.502-1.789-1.678-2.09-.176-.302-.019-.465.131-.615.136-.135.302-.352.453-.529.151-.176.201-.302.302-.503.101-.2.05-.377-.025-.529-.075-.151-.68-1.634-.932-2.244-.246-.591-.496-.51-.68-.519-.176-.009-.377-.01-.578-.011-.201 0-.528.075-.805.377-.277.301-1.057 1.032-1.057 2.516s1.082 2.917 1.233 3.118c.151.201 2.13 3.253 5.16 4.561.72.311 1.282.497 1.72.637.724.23 1.382.198 1.902.12.58-.088 1.785-.73 2.037-1.435.252-.704.252-1.308.176-1.435-.076-.127-.277-.202-.579-.353z"/></svg>
+        </a>
+    </div>
+
+    <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== */ -->
+    <footer class="footer">
+        <span class="footer-om">ॐ</span>
+        <h2>Mala Tree</h2>
+        <p class="footer-tagline">Wear the Energy of the Universe</p>
+        <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/custom_mala_knots?igsh=bHc0d2FqcW9wbWV6" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram Profile">IG</a>
+            <a href="https://wa.me/917681915216" target="_blank" rel="noopener" class="footer-social-link" aria-label="WhatsApp Chat Link">WA</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">&copy; 2026 Mala Tree. All rights reserved. Handcrafted meticulously in Patiala, Punjab.</p>
+    </footer>
+
+    <!-- ==========================================================================
+       CORE VANILLA JAVASCRIPT LOGIC
+       ========================================================================== */ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Sticky Navbar Color Transition logic ---
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // --- Mobile Menu Toggle & Accessibility logic ---
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            const toggleMenu = () => {
+                const isOpen = hamburger.classList.toggle('open');
+                navMenu.classList.toggle('open');
+                hamburger.setAttribute('aria-expanded', isOpen);
+            };
+
+            hamburger.addEventListener('click', toggleMenu);
+            navLinks.forEach(link => link.addEventListener('click', () => {
+                if(hamburger.classList.contains('open')) toggleMenu();
+            }));
+
+            // --- Hero Parallax Scroll Effect ---
+            const heroBg = document.getElementById('heroBg');
+            window.addEventListener('scroll', () => {
+                let offset = window.scrollY;
+                heroBg.style.transform = `translateY(${offset * 0.4}px)`;
+            });
+
+            // --- Scroll Reveal Animation Engine (IntersectionObserver) ---
+            const fadeUpElements = document.querySelectorAll('.fade-up');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+            fadeUpElements.forEach(el => revealObserver.observe(el));
+
+            // --- Animated Counter System ---
+            const counterElements = document.querySelectorAll('.counter');
+            const animateCounters = (counterEl) => {
+                const target = parseInt(counterEl.getAttribute('data-target'), 10);
+                let current = 0;
+                const duration = 2000; 
+                const increment = target / (duration / 16);
+
+                const updateCount = () => {
+                    current += increment;
+                    if (current < target) {
+                        counterEl.innerText = Math.ceil(current) + (target === 100 ? '%' : '+');
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counterEl.innerText = target + (target === 100 ? '%' : '+');
+                    }
+                };
+                updateCount();
+            };
+
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counterElements.forEach(counter => counterObserver.observe(counter));
+
+            // --- Pure JavaScript Lightbox Gallery Modal Component ---
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightbox = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const lightboxClose = document.getElementById('lightboxClose');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const imgSrc = item.querySelector('img').getAttribute('src');
+                    const imgAlt = item.querySelector('img').getAttribute('alt');
+                    lightboxImg.setAttribute('src', imgSrc);
+                    lightboxImg.setAttribute('alt', imgAlt);
+                    lightbox.classList.add('active');
+                });
+            });
+
+            const closeLightbox = () => lightbox.classList.remove('active');
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+            // --- Auto Rotating Testimonial Slider System ---
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dotsContainer = document.getElementById('sliderDots');
+            let currentSlideIndex = 0;
+            let slideInterval;
+
+            // Generate structural dot UI navigation elements
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+                dotsContainer.appendChild(dot);
+                dot.addEventListener('click', () => goToSlide(index));
+            });
+
+            const dots = document.querySelectorAll('.dot');
+
+            const goToSlide = (index) => {
+                slides[currentSlideIndex].classList.remove('active');
+                dots[currentSlideIndex].classList.remove('active');
+                currentSlideIndex = index;
+                slides[currentSlideIndex].classList.add('active');
+                dots[currentSlideIndex].classList.add('active');
+                resetSlideTimer();
+            };
+
+            const nextSlide = () => {
+                let nextIndex = (currentSlideIndex + 1) % slides.length;
+                goToSlide(nextIndex);
+            };
+
+            const resetSlideTimer = () => {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 4000);
+            };
+
+            slideInterval = setInterval(nextSlide, 4000);
+
+            // --- Back To Top Dynamic Scroll Monitor ---
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            });
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // --- High Performance Button Ripple Effect Engine ---
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    let x = e.clientX - e.target.getBoundingClientRect().left;
+                    let y = e.clientY - e.target.getBoundingClientRect().top;
+                    let ripple = document.createElement('span');
+                    ripple.classList.add('ripple');
+                    ripple.style.left = `${x}px`;
+                    ripple.style.top = `${y}px`;
+                    this.appendChild(ripple);
+                    setTimeout(() => ripple.remove(), 600);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
